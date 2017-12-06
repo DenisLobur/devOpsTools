@@ -3,14 +3,3 @@
 
 [remote]
 192.168.1.2
-
-- hosts: local
-  connection: local
-  become: yes
-  become_user: root
-  tasks:
-   - name: Install Nginx
-     apt:
-       name: nginx
-       state: installed
-       update_cache: true
